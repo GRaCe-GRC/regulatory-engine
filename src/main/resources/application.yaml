@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: regulatory-engine
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  info:
+    env:
+      enabled: true
+
+info:
+  app:
+    name: regulatory-engine
+    description: Proposes controls and control mappings with RAG and an LLM; publishes ReviewCompleted
